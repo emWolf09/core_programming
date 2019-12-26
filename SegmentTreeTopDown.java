@@ -75,7 +75,7 @@ public class SegmentTree {
 			this.val = v;
 		}
 	}
-	
+	//re is short for recursive function
 	public static TreeNode re(int a[],int l,int r){
 		if(l>r)return null;
 		if(l==r){
@@ -90,12 +90,12 @@ public class SegmentTree {
 	}
 	public static TreeNode constructMaximumBinaryTree(int[] n) {
 		createSegTree(n);
-        mp = new HashMap<>();
-        for(int i=0;i<n.length;i++){
-        	mp.put(n[i],i);//to handle duplicate
-        }
+		mp = new HashMap<>();
+		for(int i=0;i<n.length;i++){
+			mp.put(n[i],i);//to handle duplicate
+		}
 		return re(n,0,n.length-1);
-    }
+	}
 	
 	public static void inorder(TreeNode r){
 		if(r==null)return;
