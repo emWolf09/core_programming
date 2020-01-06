@@ -2,7 +2,8 @@
   By : Mahesh Nagarwal
   ToDo: delete function
   scalable for any type of characterset , Just provide starting character and characterset size in TrieNode class
-  
+  Leetcode problem solution :: Implement Trie (Prefix Tree)
+  Credit -  leetcode.com
 */
 
 
